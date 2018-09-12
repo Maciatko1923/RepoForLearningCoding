@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//1. Program przeliczający temperaturę w stopniach Celcjusza na temperaturę w stopniach Fahrenheita. 
+//   Program prosi użytkownika o podanie temperatury w stopiach Celsjusza. Wzór : F = 32 + (9/5)*C
+
+//2. Program obliczający deltę równania kwadratowego ax^2 + bx + c = 0. 
+//   Program prosi użytkownika o podanie a,b,c.
+
 namespace Lesson1_Basics
 {
     public class Program
@@ -11,44 +18,7 @@ namespace Lesson1_Basics
         public static void Main(string[] args)
         {
 
-            //Reading data from keyboard, m - new line, t -tabulacja
-            Console.WriteLine("WHATS YOUR NAME?");
-            String name = Console.ReadLine();
-
-            if (name.Length == 0)
-            {
-                Console.Error.WriteLine("\n\t error:name has no letters");
-
-            }
-            if (name.Length == 2)
-            {
-                Console.WriteLine("this is not a name");
-            }
-
-            if (name[0] == name[1])
-            {
-                Console.WriteLine("first two letters are the same");
-            }
-
-            var sex = ReturnedSex(name);
-            //static means you can call the method without creating the object
-
-            if (sex) Console.WriteLine(name + " is for girl");
-            Console.ReadLine();
-        }
-        public static bool ReturnedSex(String name)
-        {
-            Boolean IsItGirl = false;
-
-            if (name[name.Length - 1] == 'a')
-            {
-                IsItGirl = true;
-            }
-            else
-            {
-                IsItGirl = false;
-            }
-            return IsItGirl;
+            
         }
     }
 }
